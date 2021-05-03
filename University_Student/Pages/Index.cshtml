@@ -252,12 +252,14 @@
     <script id="StudentsTemplate" type="text/x-jquery-tmpl">
         <div class="col-lg-3" style="margin:10px;">
             <div class="card card text-white bg-dark border-warning mb-3" style="width: 18rem; padding:20px">
-                <div class="card-body">
-                    <h5 class="card-title">Student Name: ${student_Name}</h5>
-                    <p class="card-text">Email :  ${student_Email}</p>
-                    <p class="card-text">Mobile : ${student_Mobile}</p>
-                    <p class="card-text">Course Name : ${course_Name}</p>
-                </div>
+                  <hr />
+                <!--<img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">-->
+                <h5>Name  -${student_Name}</h5><br />
+                <h5>Email     -${student_Email}</h5><br />
+                <h5>Contact   -${student_Mobile}</h5><br />
+                <h5>Course   -${course_Name }</h5><br />
+                <br>
+            </div>
                 <span>
                     <button class="btn btn-primary" onclick="getStudentForUpdate('${id}')" data-toggle="modal" data-target="#UpdateStudents">Update</button>
                     <a href="#" class="btn btn-danger" onclick="remove('${id}')">Delete</a>
